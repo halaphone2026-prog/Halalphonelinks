@@ -3,15 +3,19 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- العنوان الذي يظهر في مربع البحث وشريط المتصفح -->
-<title>هلا فون | Hala Phone</title>
+<!-- اسم الموقع في شريط المتصفح -->
+<title>Hala Phone | هلا فون</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- وصف الصفحة (مهم للبحث) -->
-<meta name="description" content="هلا فون - روابط التواصل الرسمية: إنستجرام، فيسبوك، واتساب">
+<!-- وصف للموقع (SEO) -->
+<meta name="description" content="Hala Phone | هلا فون - روابط التواصل الرسمية">
 
-<!-- Icons -->
+<!-- أيقونة المتصفح SVG -->
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="apple-touch-icon" href="logo.svg">
+
+<!-- أيقونات -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -26,48 +30,37 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  background: linear-gradient(135deg,#25D366,#1877F2,#E1306C);
+  background: linear-gradient(135deg,#caa24d,#000,#caa24d);
   background-size:400% 400%;
   animation:bgMove 10s ease infinite;
 }
 
-@keyframes bgMove {
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
+@keyframes bgMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .box{
   width:330px;
   padding:30px 25px;
   text-align:center;
-  border-radius:20px;
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(15px);
-  box-shadow:0 20px 40px rgba(0,0,0,.25);
-  animation: fadeIn 1.2s ease;
+  border-radius:22px;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(15px);
+  box-shadow:0 20px 40px rgba(0,0,0,.3);
+  animation:fadeIn 1.2s ease;
 }
 
 @keyframes fadeIn{
-  from{opacity:0; transform:translateY(30px);}
-  to{opacity:1; transform:translateY(0);}
+  from{opacity:0; transform:translateY(30px)}
+  to{opacity:1; transform:translateY(0)}
 }
 
-.logo{
-  width:90px;
-  height:90px;
-  border-radius:50%;
-  background:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin:0 auto 15px;
-  box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-
-.logo i{
-  font-size:40px;
-  color:#25D366;
+/* شعار داخل الصفحة */
+.logo img{
+  width:120px;
+  margin-bottom:15px;
 }
 
 h2{
@@ -86,22 +79,22 @@ a{
   text-decoration:none;
   border-radius:14px;
   font-size:16px;
-  transition:all .3s ease;
+  transition:.3s;
 }
 
-.instagram{background:#E1306C;}
-.facebook{background:#1877F2;}
-.whatsapp{background:#25D366;}
+.instagram{background:#E1306C}
+.facebook{background:#1877F2}
+.whatsapp{background:#25D366}
 
 a:hover{
-  transform: translateY(-4px) scale(1.03);
+  transform:translateY(-4px) scale(1.03);
   box-shadow:0 12px 25px rgba(0,0,0,.3);
 }
 
 .footer{
-  margin-top:20px;
+  margin-top:18px;
   font-size:12px;
-  color:rgba(255,255,255,.85);
+  color:rgba(255,255,255,.8);
 }
 </style>
 </head>
@@ -110,11 +103,12 @@ a:hover{
 
 <div class="box">
 
+  <!-- الشعار -->
   <div class="logo">
-    <i class="fas fa-mobile-alt"></i>
+    <img src="logo.svg" alt="Hala Phone Logo">
   </div>
 
-  <h2>هلا فون<br>Hala Phone</h2>
+  <h2>Hala Phone</h2>
 
   <a class="instagram" href="https://www.instagram.com/halaphone.ye/" target="_blank">
     <i class="fab fa-instagram"></i> Instagram
@@ -125,7 +119,7 @@ a:hover{
   </a>
 
   <a class="whatsapp" href="https://wa.me/967770775357" target="_blank">
-    <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+    <i class="fab fa-whatsapp"></i> واتساب
   </a>
 
   <div class="footer">
